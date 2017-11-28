@@ -1,0 +1,13 @@
+dn: cn=module,cn=config
+cn: module
+objectClass: olcModuleList
+objectClass: top
+olcModulePath: /usr/lib/ldap
+olcModuleLoad: lastbind.la
+
+dn: olcOverlay=lastbind,olcDatabase={1}hdb,cn=config
+objectClass: olcOverlayConfig
+objectClass: olcLastBindConfig
+objectClass: top
+olcOverlay: lastbind
+olcLastBindPrecision: 60
