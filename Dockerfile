@@ -17,6 +17,7 @@ ENV SLAPD_LOAD_LDIFS=""
 
 # Copy in configuration files
 COPY resources/modules/ppolicy.ldif /etc/ldap.dist/modules/ppolicy.ldif
+COPY resources/modules/lastbind.ldif /etc/ldap.dist/modules/lastbind.ldif
 
 COPY resources/configuration/check_password.conf /etc/ldap.dist/check_password.conf
 
